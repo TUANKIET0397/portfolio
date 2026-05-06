@@ -1,0 +1,25 @@
+@import "../../vars.css";
+
+.container {
+    display: flex;
+    margin: 129px 5% 0;
+    border-radius: 10px;
+    background: #090f19;
+}
+
+.hero {
+
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-top: 55px;
+    margin-left: 73px;
+}
+
+.image {
+    width: 100%;
+    margin-left: 40px;
+}
