@@ -1,7 +1,7 @@
-import "./App.css"
+import styles from "./App.module.css"
 
 function App() {
-    return <h1>Hello Portfolio</h1>
+    return <div className={styles.App}>Hello Portfolio</div>
 }
 
 export default App
