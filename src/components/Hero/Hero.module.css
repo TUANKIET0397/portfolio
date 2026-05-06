@@ -9,7 +9,7 @@
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
-}
+    }
 
 .content {
     display: flex;
@@ -73,12 +73,12 @@
 
 .topBlur {
     position: absolute;
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
     min-width: 350px;
     min-height: 350px;
-    top: -128px;
-    left: 10vw;
+    top: -296px;
+    left: -300px;
     border-radius: 764px;
     background: rgba(25, 25, 109, 0.7);
     filter: blur(100px);
@@ -87,12 +87,12 @@
 
 .bottomBlur {
     position: absolute;
-    width: 70vw;
-    height: 50vw;
+    width: 55vw;
+    height: 45vw;
     min-width: 350px;
     min-height: 250px;
-    top: 246px;
-    right: -25vw;
+    top: -20px;
+    right: 0;
     border-radius: 764px;
     background: rgba(25, 25, 109, 0.7);
     filter: blur(100px);
