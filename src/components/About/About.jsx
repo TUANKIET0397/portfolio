@@ -1,39 +1,60 @@
+import React from "react"
+
 import styles from "./About.module.css"
 import { getImageUrl } from "../../utils"
 
 export default function About() {
     return (
-        <div>
-            {/* <div className={styles.container}> */}
-            {/* left */}
-            {/* <div className={styles.hero}>
-                    <h2 className={styles.title}>ABOUT</h2>
-                    <img
-                        className={styles.image}
-                        src={getImageUrl("about/aboutImage.png")}
-                        alt=""
-                    />
-                </div> */}
-            {/* right */}
-            {/* <div className={styles.content}>
-                    <div className={styles.itemContainer}>
+        <section className={styles.container} id="about">
+            <h2 className={styles.title}>About</h2>
+            <div className={styles.content}>
+                <img
+                    src={getImageUrl("about/aboutImage.png")}
+                    alt="Me sitting with a laptop"
+                    className={styles.aboutImage}
+                />
+                <ul className={styles.aboutItems}>
+                    <li className={styles.aboutItem}>
                         <img
-                            className={styles.icon}
                             src={getImageUrl("about/cursorIcon.png")}
-                            alt=""
+                            alt="Cursor icon"
                         />
-                        <div className={styles.item}>
-                            <h3 className={styles.itemTitle}>
-                                Frontend Developer
-                            </h3>
-                            <p className={styles.itemDescription}>
-                                I’m a front-end developer with experience in
+                        <div className={styles.aboutItemText}>
+                            <h3>Frontend Developer</h3>
+                            <p>
+                                I'm a frontend developer with experience in
                                 building responsive and optimized sites
                             </p>
                         </div>
-                    </div>
-                </div> */}
-            {/* </div> */}
-        </div>
+                    </li>
+                    <li className={styles.aboutItem}>
+                        <img
+                            src={getImageUrl("about/serverIcon.png")}
+                            alt="Server icon"
+                        />
+                        <div className={styles.aboutItemText}>
+                            <h3>Backend Developer</h3>
+                            <p>
+                                I have experience developing fast and optimised
+                                back-end systems and APIs
+                            </p>
+                        </div>
+                    </li>
+                    <li className={styles.aboutItem}>
+                        <img
+                            src={getImageUrl("about/cursorIcon.png")}
+                            alt="UI icon"
+                        />
+                        <div className={styles.aboutItemText}>
+                            <h3>UI Designer</h3>
+                            <p>
+                                I have designed multiple landing pages and have
+                                created design systems as well
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     )
 }
